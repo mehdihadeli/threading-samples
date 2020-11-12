@@ -10,6 +10,7 @@ namespace TaskChaining
     {
         static void Main(string[] args)
         {
+            //https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks
             Task<string> antecedent = Task.Run(() =>
             {
                 Task.Delay(2000);

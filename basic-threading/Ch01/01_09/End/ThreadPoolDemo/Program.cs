@@ -20,6 +20,7 @@ namespace ThreadPoolDemo
             ThreadPool.QueueUserWorkItem(
                 new WaitCallback(DisplayEmployeeInfo), employee);
 
+            // number of processor in this machine
             var processorCount = Environment.ProcessorCount;
             ThreadPool.SetMaxThreads(processorCount * 2, processorCount * 2);
 

@@ -10,6 +10,7 @@ namespace TasksIo
     {
         static void Main(string[] args)
         {
+            //https://www.c-sharpcorner.com/UploadFile/19b1bd/threading-simplified-part-6/
             Task<string> task = Task.Factory.StartNew<string>
                 (() => GetPosts("https://jsonplaceholder.typicode.com/posts"));
 

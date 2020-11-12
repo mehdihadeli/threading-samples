@@ -16,9 +16,8 @@ namespace Exceptions
 
         private static void Demo()
         {
-
+            //https://www.c-sharpcorner.com/UploadFile/19b1bd/threading-simplified-part-6/
             new Thread(Execute).Start();
-
         }
 
         static void Execute()
